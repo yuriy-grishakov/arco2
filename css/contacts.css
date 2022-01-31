@@ -1,0 +1,160 @@
+.contacts {}
+
+.contacts-wrapper {
+	border-radius: 10px;
+	overflow: hidden;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+/*   contacts-info   */
+
+.contacts-info {
+	padding: 60px;
+	background-color: #ECD7AF;
+	background-image: linear-gradient(0deg, rgba(243, 231, 198, 0.6), rgba(243, 231, 198, 0.7)), url(blue-master-bedroom-2021-08-26-15-32-55-utc.jpg), url(../img/global/contacts/bg-image@2x.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.contacts-info__list {
+	display: grid;
+	grid-row-gap: 25px;
+	margin-bottom: 50px;
+	margin-top: 75px;
+}
+
+.contacts-info__list a:hover {
+	text-decoration: underline;
+}
+
+.contacts-info__item {
+	font-size: 25px;
+	font-weight: 700;
+	text-decoration: none;
+	display: block;
+	color: var(--color-text);
+}
+
+.contacts-btn {
+	width: 260px;
+	font-size: 22px;
+}
+
+
+/*  map  */
+
+#map {
+	background-color: #E8E7EF;
+	height: auto;
+	display: block;
+	min-height: 500px;
+}
+
+[class*="copyrights-pane"] {
+	display: none !important;
+}
+
+
+
+/*   responsive   */
+
+
+@media (max-width: 1399px) {
+
+	.contacts-info__list {
+		margin-top: 50px;
+	}
+
+	#map {
+		min-height: 0px;
+		height: 380px
+	}
+}
+
+@media (max-width: 991px) {
+
+	.contacts-info {
+		padding: 40px 20px 40px 35px;
+	}
+
+	.contacts-info__list {
+		margin-top: 35px;
+		grid-gap: 20px;
+		margin-bottom: 100px;
+	}
+
+	.contacts-info__item {
+		font-size: 20px;
+	}
+
+	.contacts-btn {
+		font-size: 20px;
+		width: 240px;
+	}    
+}
+
+@media (max-width: 767px) {
+
+    .contacts-wrapper {
+    	display: block;
+    }
+
+    .contacts-info__list {
+		margin-bottom: 30px;
+		grid-gap: 13px;
+		margin-top: 30px;
+	}
+
+	.contacts-info__item {
+		font-weight: 400;
+	}
+
+}
+
+@media (max-width: 575px) {
+
+	.contacts-info {
+		padding: 40px 30px;
+	}
+
+	.contacts-info__item {
+		font-size: 18px;
+	}
+
+	.contacts-btn {
+		width: 100%;
+		max-width: 100%;
+	}
+
+    #map {
+		height: 300px
+	}
+}
+
+@media (max-width: 374px) {
+
+	.contacts-info {
+		padding: 40px 15px;
+	}
+
+	.contacts-info__item {
+		max-width: 250px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
